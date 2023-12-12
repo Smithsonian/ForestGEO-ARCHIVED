@@ -56,4 +56,3 @@ jobs:
         with:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_WONDERFUL_GLACIER_070344F0F }}
           action: "close"
->>>>>>> c97dc09 (reset and attempt to use static web apps instead of standard app service, seeing if it's any easier)
