@@ -11,6 +11,9 @@
     "clean": "rm -rf .next node_modules package-lock.json; npm install",
     "post-update": "echo \"codesandbox preview only, need an update\" && yarn upgrade --latest"
   },
+  "engines" : {
+    "node" : ">=18.0.0 <21.0.0"
+  },
   "dependencies": {
     "@azure/storage-blob": "^12.17.0",
     "@emotion/cache": "latest",
