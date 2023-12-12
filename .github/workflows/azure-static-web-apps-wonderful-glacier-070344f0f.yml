@@ -21,10 +21,12 @@ jobs:
       AZURE_AD_CLIENT_ID: ${{ secrets.AZURE_AD_CLIENT_ID }}
       AZURE_AD_TENANT_ID: ${{ secrets.AZURE_AD_TENANT_ID }}
       NEXTAUTH_SECRET: ${{ secrets.NEXTAUTH_SECRET }}
+      NEXTAUTH_URL: ${{ secrets.NEXTAUTH_URL }}
       AZURE_SQL_USER: ${{ secrets.AZURE_SQL_USER }}
       AZURE_SQL_PASSWORD: ${{ secrets.AZURE_SQL_PASSWORD }}
       AZURE_SQL_SERVER: ${{ secrets.AZURE_SQL_SERVER }}
       AZURE_SQL_DATABASE: ${{ secrets.AZURE_SQL_DATABASE }}
+
     name: Build and Deploy Job
     steps:
       - uses: actions/checkout@v3
