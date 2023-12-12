@@ -301,9 +301,8 @@ export function selectAllRows(plot: string) {
  * CONTAINER STORAGE FUNCTIONS
  */
 export async function getContainerClient(plot: string) {
-  const accountName = process.env.AZURE_STORAGE_ACCOUNT_NAME;
   const storageAccountConnectionString = process.env.AZURE_STORAGE_CONNECTION_STRING;
-  if (!accountName || !storageAccountConnectionString) throw new Error("process envs failed");
+  if (!storageAccountConnectionString) throw new Error("process envs failed");
   // create client pointing to AZ storage system from connection string from Azure portal
   const blobServiceClient = BlobServiceClient.fromConnectionString(storageAccountConnectionString);
   if (!blobServiceClient) throw new Error("blob service client creation failed");
