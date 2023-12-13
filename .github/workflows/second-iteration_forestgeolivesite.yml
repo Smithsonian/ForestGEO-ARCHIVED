@@ -76,7 +76,7 @@ jobs:
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v2
         with:
-          app-name: 'testsitefgeo'
+          app-name: 'forestgeolivesite'
           slot-name: 'development'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE }}
           package: .
