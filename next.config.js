@@ -1,6 +1,5 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: "standalone",
   async redirects() {
     return [
       {
@@ -10,6 +9,7 @@ const nextConfig = {
       },
     ]
   },
+  output: "standalone",
 }
 
 module.exports = nextConfig
