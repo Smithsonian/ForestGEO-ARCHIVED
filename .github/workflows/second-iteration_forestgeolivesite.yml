@@ -59,7 +59,7 @@ jobs:
           echo NODE_ENV=development >> .env
 
       - name: Zip artifact for deployment
-        run: zip release.zip ./* .next .env -qr
+        run: zip release.zip ./* .next .env -r
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v3
@@ -99,4 +99,4 @@ jobs:
           app-name: 'forestgeolivesite'
           slot-name: 'development'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE }}
-          package: release.zip
+          package: .
