@@ -100,3 +100,4 @@ jobs:
           slot-name: 'development'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE }}
           package: .
+
